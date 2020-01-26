@@ -1,0 +1,147 @@
+/* Theme CCSTheme */
+.ThemePageBODY{ font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 13px; }
+.ThemeFormHeaderFont{ color: #000000; font-size: 16px; font-weight: bold; }
+.ThemeFormTABLE{
+	font-family: Tahoma, Verdana, Arial, Helvetica; 
+	font-size: 16px;
+	 min-width: 624px;
+}
+.ThemeFieldCaptionTD{ border-bottom: 1px solid #FFFFFF; color: #000000; background-color: #ECE9D9; font-size: 13px; }
+
+.ThemeColumnTD{ text-align: center; border-left: 1px solid #89999B; border-bottom: 1px solid #89999B; border-top: 1px solid #89999B; color: #FFFFFF; background-color: #A2ADBD; font-size: 13px; font-weight: bold; }
+
+/* for each row */
+.StyleThemeDataTD{  border-bottom: 1px solid #FFFFFF; color: #000000; background-color: #ECE9D9; font-size: 13px; }
+.ThemeAltDataTD{ color: #000000; background-color: #F2F2F2; font-size: 13px; }
+
+/* for selected rows */
+.ThemeAltSelectedTD{ text-align: center; border-bottom: 1px solid #FFFFFF; color: #FF0000; background-color: #CBFFD0; font-size: 13px; }
+.ThemeSelectedTD{ text-align: center; border-bottom: 1px solid #FFFFFF; color: #FF0000; background-color: #C4EDC8; font-size: 13px; }
+
+/* for hover row */
+.ThemeHoverTD{ border-bottom: 1px solid #FFFFFF; color: #FF0000; background-color: #F9FBC2; font-size: 13px; }
+
+.ThemeErrorDataTD{ border-bottom: 1px solid #FFFFFF; color: #FF0000; background-color: #E7EFEF; font-size: 13px; }
+
+.ThemeSeparatorTD{ height: 1px; background-color: #000000; }
+.ThemeFooterTD{ border: 1px solid #89999B; background-color: #A2ADBD; color: #000000; font-weight: bold; font-size: 13px; text-align: center; }
+.ThemeHeaderTD{ border: 1px solid #89999B; background-color: #A2ADBD; color: #ffffff; font-weight: bold; font-size: 13px; text-align: center; }
+.FooterText{ border: 1px solid #ffffff; background-color: #A2ADBD; color: #ffffff; font-weight: bold; font-size: 14px; text-align: center; }
+
+.ThemeInput { border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; background-color: #FFFFFF; font-size: 13px; font-family: Tahoma, Verdana, Arial, Helvetica; }
+.ThemeTextarea { border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; background-color: #FFFFFF; font-size: 13px; font-family: Tahoma, Verdana, Arial, Helvetica; }
+.ThemeSelect { font-size: 13px; font-family: Tahoma, Verdana, Arial, Helvetica; }
+
+
+/*===============================================*/
+/* DHTML css  */
+/*===============================================*/
+
+.DHTMLThemeFieldCaptionTD{ border-bottom: 1px solid #FFFFFF; color: #000000; background-color: #FDDDD5; font-size: 13px; }
+.DHTMLThemeDataTD{  border-bottom: 1px solid #FFFFFF; color: #000000; background-color: #FDDDD5; font-size: 13px; }
+
+
+
+/*===============================================*/
+/* Debug  */
+/*===============================================*/
+
+.DebugBackground	{background-color: Yellow;}
+
+.DebugReservedWord	{color: Maroon; font-weight: Bold;}
+.DebugIdentifier	{color: Orange; font-weight: Bold;}
+.DebugVariable		{color: Red; font-weight: Bold;}
+.DebugString		{color: Black;}
+.DebugNumber		{color: Navy; font-weight: Bold;}
+.DebugSymbol		{color: Blue; font-weight: Bold;}
+
+.DebugVariableTypeRow{background-color: Orange; font-size: 12px; font-weight: bold; color: Navy;}
+.DebugVariableNameCell{background-color: Navy; font-size: 10px; font-weight: bold; color: White;}
+.DebugVariableValueCell{background-color: Silver; font-size: 10px; font-weight: bold;}
+
+
+/*===============================================*/
+/* form  */
+/*===============================================*/
+
+.FormRowTitle{font-size: 12px; font-weight: Bold; text-align: center; background-color: white; color: Navy; background-image: url('../image/form/form_headerrow.gif'); height: 20px; vertical-align: middle;}
+.FormRowSubTitle1{font-size: 12px; font-weight: Bold; text-align: Center; background-color: Navy; color: Navy; height: 20px; background-image: url('../image/form/form_subtitle_1.gif'); vertical-align: middle;}
+.FormRowErrorMessage{font-size: 12px; text-align: Center; background-color: Red; color: Yellow; font-weight: Bold;}
+.FormRowInputSection{font-weight: bold; text-align: Center; background-color: White; color: Navy; background-image: url('../image/form/form_inputsectionrow.gif'); height: 20px; vertical-align: middle;}
+.FormRowField{vertical-align: top;}
+.FormRowButton{text-align: right; background-color: Navy; background-image: url('../image/form/form_buttonrow.gif'); vertical-align: middle;}
+.FormRowTip{font-size: 10px; background-color: Yellow; color: Navy;}
+
+.FormTextNormal{font-size: 12px;}
+.FormFieldRequired{color: Red;}
+.FormFieldCaptionError{color: Red;}
+.FormFieldSeperator{width: 30px;}
+
+.FormInputReadOnly{font-weight: Bold; color: Grey; border-style: solid; border-color: Navy; border-width: 1px; background-color: #ebebff;}
+.FormInputText{height: 21px; background-image: url('../image/form/form_input_text.gif'); border-style: Solid; border-color: black; border-width: 1px;}
+.FormInputPassword{height: 21px; background-image: url('../image/form/form_input_password.gif'); border-style: Solid; border-color: black; border-width: 1px;}
+.FormInputButton{height: 21px; background-image: url('../image/form/form_input_button.gif'); color: navy; font-weight: Bold; border-style: Solid; border-color: black; border-width: 1px;}
+.FormInputRadio{border-style: none; border-width: 0px;}
+.FormTextInput{border-style: Solid; border-color: black; border-width: 1px;}
+
+
+
+/*===============================================*/
+/* page  */
+/*===============================================*/
+
+.Error404Image{border-style: solid; border-width: 5px; border-color: gray;}
+
+.RevokeAccount{text-align: right; font-weight: bold;}
+
+/*usergroupassign*/
+.UserGroupAssignHeaderDIV{font-weight: bold; color: white; font-size: 16px; background-color: #658fd4; padding: 5px; border: 3px #b7c3db inset;}
+.UserGroupAssignBodyDIV{border-style: solid; border-color: #658fd4; border-width: 1px;}
+.UserGroupAssignGroupNameDIV{font-size: 16px; color: maroon; font-weight: bold; padding-top: 10px;}
+
+/*scriptusergroupassign*/
+.ScriptUserGroupAssignHeaderDIV{font-weight: bold; color: white; font-size: 16px; background-color: #658fd4; padding: 5px; border: 3px #b7c3db inset;}
+.ScriptUserGroupAssignBodyDIV{border-style: solid; border-color: #658fd4; border-width: 1px;}
+.ScriptUserGroupAssignScriptNameDIV{font-size: 16px; color: maroon; font-weight: bold; padding-top: 10px;}
+
+
+
+
+/*===============================================*/
+/* Window  */
+/*===============================================*/
+
+.WindowTable{background-color: silver;}
+.WindowRowTop{background-color: Red;height: 20px;background-image: url('../image/window/window_rowtop.gif');}
+.WindowTitle{font-size: 14px;font-weight: bold;color: Navy;vertical-align: middle;}
+.WindowRowMiddleCellLeft{background-color: Green;width: 4px;background-image: url('../image/window/window_rowmiddlecellleft.gif');}
+.WindowRowMiddleCellCenter{padding: 5px;background-color: Silver;background-image: url('../image/window/window_rowmiddlecellcenter.gif');}
+.WindowContent{color: Black;font-size: 12px;}
+.WindowRowMiddleCellRight{background-color: Green;width: 4px;background-image: url('../image/window/window_rowmiddlecellright.gif');}
+.WindowRowBottom{background-color: Red;height: 4px;background-image: url('../image/window/window_rowbottom.gif');}
+.WindowRowBottomCellLeft{background-image: url('../image/window/window_rowbottomcellleft.gif');}
+.WindowRowBottomCellRight{background-image: url('../image/window/window_rowbottomcellright.gif');}
+
+
+
+/*===============================================*/
+/* Cart  */
+/*===============================================*/
+
+.CartTitle {
+	background-color: #cc3300;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	color: #ffffff;
+	font-family: Tahoma, Verdana, Arial, Helvetica;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.CartVal { border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; background-color: #FF9966; color: #000000; font-size: 10px; font-family: Tahoma, Verdana, Arial, Helvetica; font-weight: bold; }
+
+/*===============================================*/
+/* other  */
+/*===============================================*/

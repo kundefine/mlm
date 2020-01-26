@@ -1,0 +1,96 @@
+/*===============================================*/
+/* Data Grid CSS  */
+/*===============================================*/
+
+
+.DataGrid_Table{font-family: Tahoma, Verdana, Arial, Helvetica; font-size: 11px; width:100%;}
+.DataGrid_SearchRow_Title{
+	font-weight: Bold;
+	font-size: 12px;
+	background-color: Navy;
+	color: Black;
+	background-image: url('../image/datagrid/Theme/Default/DataGrid_SearchRow_Title.gif');
+	height: 20px;
+	vertical-align: middle;
+}
+.DataGrid_Title_Table{
+	width: 100%;
+	background-color: Black;
+	color: Navy;
+	background-image: url('../image/datagrid/Theme/Default/DataGrid_Title_Table.gif');
+	height: 26px;
+}
+
+.DataGrid_Title_Table_Bar{
+	width: 100%;
+	font-weight: Bold;
+	font-size: 13px;
+	background-image: url('../image/datagrid/Theme/Default/Footer.gif');
+	height: 23px;
+}
+
+.DataGrid_DataRow_Odd{
+	border-bottom: 1px solid #FFFFFF;
+	color: #000000;
+	background-color: #ECE9D9;
+	font-size: 13px;
+}
+
+.DataGrid_DataRow_Even{
+	color: #000000;
+	background-color: #F2F2F2;
+	font-size: 13px;
+}
+
+.RowMouseOver{
+	color: #000000;
+	background-color: #A7E1FB;
+	font-size: 13px;
+}
+
+.DataGrid_FooterRow{
+	background-color: Navy;
+	background-image: url('../image/DataGrid/Theme/Default/Footer.gif');
+	height: 8px;
+}
+
+
+.DataGrid_SearchPanel_SubmitButton{text-align: right;}
+.DataGrid_Title_Row_Left{font-weight: Bold; vertical-align: right;}
+.DataGrid_Title_Row_Right{font-weight: Bold; text-align: Right; font-size: 11px;}
+
+.list{ text-align: left; color: #000000; font-size: 12px; font-weight: bold; }
+.DataGrid_ControlPanel_Row{text-align: center;}
+.DataGrid_GridTable{width: 100%; color: black;}
+		.DataGrid_ColumnTitle_Row{background-color: Navy; color: black; font-weight: Bold; text-align: center; background-image: url('../image/datagrid/datagrid_columntitlerow.gif'); height: 20px; vertical-align: middle;}
+		.DataGrid_ColumnTitle_Row_Serial_Cell{width:1px; }
+		.DataGrid_ColumnTitle_Row_CheckBox_Cell{width: 100px;}
+		.DataGrid_ColumnTitle_Link{
+						color: Black;
+						text-decoration: none;
+		}
+		.DataGrid_ColumnTitle_Link:hover{color: Aqua;}
+		.DataGrid_ColumnTitle_Row_Action_Cell{width: 180px;}
+
+			.DataGrid_DataCell{padding: 2px;}
+			.DataGrid_Image{height: 40px; border: #ffffff;}
+			.DataGrid_ActionCell{text-align: Right;}
+
+	.DataGrid_Free_Text{
+            color: #000000;
+			font-size: 12px;
+			font-weight: bold;
+
+	}
+	.DataGridButton{
+			background-color: #E7EFEF;
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			border-top: 1px solid #000000;
+			color: #000000;
+			font-family: Tahoma, Verdana, Arial, Helvetica;
+			font-size: 12px;
+			font-weight: bold;
+
+}
