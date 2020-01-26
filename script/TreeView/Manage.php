@@ -17,9 +17,13 @@ $tree = new Tree();
             array("admin")
         )
     );
+    $for = $tree->buidTree($build);
+
+    Helper::pr($tree->formatTree($build));
 
     Helper::pr("tree<br>", $build);
     Helper::pr($tree->buidTree($build));
+
 
 
 $NoneReplaceMainContent.='

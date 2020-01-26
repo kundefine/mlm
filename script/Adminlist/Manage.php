@@ -10,7 +10,7 @@
 	// Delete a data
 	if(isset($_GET["DeleteConfirm"]))SQL_InsertUpdate($Entity="{$Entity}",$TheEntityNameData=array("Usertype"=>"User"), $Where="{$Entity}ID = {$_REQUEST[$Entity."ID"]} AND UserName!= '{$_SESSION[UserName]}' AND {$Entity}UUID = '{$_REQUEST[$Entity."UUID"]}'");
 
-    $Where="1 = 1 and Usertype!='User' and UserName!= '{$_SESSION[UserName]}'";
+    $Where="1 = 1 and Usertype!='Basic' and UserName!= '{$_SESSION[UserName]}'";
 	if($_POST["FreeText"]!="")
 		$Where.=" and {$_REQUEST["SearchCombo"]} LIKE '%{$_POST["FreeText"]}%'";
 

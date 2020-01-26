@@ -22,13 +22,7 @@ class Tree {
             }
             $this->make($this->new_parent, $level);
         }
-
         return $this->tree;
-/*        return [
-            ["previous_parent" => $this->prev_parent],
-            ["new_tree" => $this->tree],
-            ["new_parent" => $this->new_parent]
-        ];*/
     }
 
     public function makeTree($tree) {
@@ -59,9 +53,6 @@ class Tree {
         return $output;
     }
 
-
-
-
     protected function makeNewParent($prev_parents, $lastTree) {
         $new_parent = array();
         $lastTreeCount = count($lastTree) - 1;
@@ -87,12 +78,25 @@ class Tree {
         }
         return $trim_output;
     }
+
     public function hasChild($parentUser) {
         $child = SQL_Select("Usertree", "DirectReferralName = '{$parentUser}'", "UsertreeId ASC");
         if(count($child)) {
             return $child;
         }
         return false;
+    }
+
+    public function formatTree($tree) {
+        $output = array();
+        for($loop1 = 0; $loop1 < 1; $loop1++) {
+            foreach ($tree[$loop1] as $key => $value) {
+                $output[] = $key;
+//                Helper::pr($output);
+            }
+
+        }
+        return array_flip($output);
     }
 }
 

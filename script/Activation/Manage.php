@@ -42,32 +42,10 @@ foreach (SQL_Select("User", "", "UserID ASC") as $user) {
 
 }
 
+$activation_code_generator_form = '';
 
-
-$NoneReplaceMainContent.='
-<div class="row background-1">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel">
-            <div class="x_title">
-            <h2>'.$page_title.'</h2>
-            <div class="clearfix">
-        </div>
-    </div>
-<div class="x_content">';
-
-if($status_message!=''){
-    $NoneReplaceMainContent.='<div class="alert '.$status_color.' alert-dismissible " role="alert">
-     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
-     </button>'.$status_message.'</div>';
-}
-
-$NoneReplaceMainContent.='
-<form class="form-horizontal form-label-left" action="" method="post" enctype="multipart/form-data">
-';
-
-//Write here
-$NoneReplaceMainContent.='
-        <div class="container">
+if($_SESSION["Usertype"] == "admin") {
+    $activation_code_generator_form = '<div class="container">
             <div class="row">
                 <div>
                     <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3 col-sm-offset-0 col-xs-offset-0">
@@ -85,7 +63,7 @@ $NoneReplaceMainContent.='
                                     <div class="form-group">
                                         <label class="">Select User</label>
                                         <select name="user_name" id="" class="form-control">
-                                            '. $UserList .'
+                                            ' . $UserList . '
                                         </select>  
                                     </div>
                                 </div>
@@ -104,32 +82,60 @@ $NoneReplaceMainContent.='
                 </div>
             </div>
         </div>
+        ';
+}
 
+    $NoneReplaceMainContent .= '
+<div class="row background-1">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+            <h2>' . $page_title . '</h2>
+            <div class="clearfix">
+        </div>
+    </div>
+<div class="x_content">';
+
+    if ($status_message != '') {
+        $NoneReplaceMainContent .= '<div class="alert ' . $status_color . ' alert-dismissible " role="alert">
+     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+     </button>' . $status_message . '</div>';
+    }
+
+    $NoneReplaceMainContent .= '
+<form class="form-horizontal form-label-left" action="" method="post" enctype="multipart/form-data">
+';
+
+//Write here
+    $NoneReplaceMainContent .= '
+        
+        '. $activation_code_generator_form .'
 
 
         <div class="container">
             <div class="row">
             <div class="col-md-12">
-            '. CTL_Datagrid(
-        $Entity,
-        $ColumnName=array( "ActivationcodeNumber" , "ActivationcodeOwner",'ActivationcodeInUse'),
-        $ColumnTitle=array( "Activation Code", "Activation Code Owner",'Activation Code in User'),
-        $ColumnAlign=array( "left", "left" , "left","left"),
-        $ColumnType=array( "text", "text","text","yes/no"),
-        $Rows=SQL_Select($Entity="{$Entity}", $Where ,  $OrderBy="$OrderByValue", $SingleRow=false, $RecordShowFrom=$_REQUEST["RecordShowFrom"], $RecordShowUpTo=$Application["DatagridRowsDefault"], $Debug=false),
-        $SearchHTML="".CTL_InputText($Name="FreeText","","",26, $Class="DataGridSearchBox")." ",
-        $ActionLinks=false,
-        $SearchPanel=true,
-        $ControlPanel=true,
-        $EntityAlias="".$EntityCaption."",
-        $AddButton=true
-    ).'
+            ' . CTL_Datagrid(
+            $Entity,
+            $ColumnName = array("ActivationcodeNumber", "ActivationcodeOwner", 'ActivationcodeInUse'),
+            $ColumnTitle = array("Activation Code", "Activation Code Owner", 'Activation Code in User'),
+            $ColumnAlign = array("left", "left", "left", "left"),
+            $ColumnType = array("text", "text", "text", "yes/no"),
+            $Rows = SQL_Select($Entity = "{$Entity}", $Where, $OrderBy = "$OrderByValue", $SingleRow = false, $RecordShowFrom = $_REQUEST["RecordShowFrom"], $RecordShowUpTo = $Application["DatagridRowsDefault"], $Debug = false),
+            $SearchHTML = "" . CTL_InputText($Name = "FreeText", "", "", 26, $Class = "DataGridSearchBox") . " ",
+            $ActionLinks = false,
+            $SearchPanel = true,
+            $ControlPanel = true,
+            $EntityAlias = "" . $EntityCaption . "",
+            $AddButton = true
+        ) . '
 </div>
             </div>
 </div>
 ';
 
 
-$NoneReplaceMainContent.='</form></div></div></div></div>';
+    $NoneReplaceMainContent .= '</form></div></div></div></div>';
+
 
 ?>
